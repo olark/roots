@@ -27,6 +27,7 @@ class ConfigLoader
     @configure_ignores()
     @configure_templates()
 
+    @proj.config_path = @path
     @proj.debug = @config.debug || @args.debug
     roots.print.debug 'config options set!'
 
